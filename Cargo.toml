@@ -4,10 +4,10 @@ version = "0.0.0"
 edition = "2021"
 
 [lib]
-path = "api/hello/message.rs"
+path = "lib.rs"
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
-adaptivemsg = { path = "../adaptivemsg-rust" }
+adaptivemsg = { git = "https://github.com/adaptivemsg/adaptivemsg-rust.git" }
 
 # TODO: set a real version and adaptivemsg dependency before publishing.

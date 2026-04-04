@@ -1,11 +1,14 @@
+//go:build server
+// +build server
+
 package main
 
 import (
 	"flag"
 	"log"
 
-	am "adaptivemsg"
-	_ "hello-server-go/api/hello"
+	am "github.com/adaptivemsg/adaptivemsg-go"
+	_ "github.com/adaptivemsg/hello-server-go/api/hello"
 )
 
 func main() {
