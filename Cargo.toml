@@ -1,13 +1,12 @@
 [package]
-name = "hello"
+name = "hello-server-go"
 version = "0.0.0"
 edition = "2021"
 
 [lib]
+name = "hello_server"
 path = "lib.rs"
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
 adaptivemsg = { git = "https://github.com/adaptivemsg/adaptivemsg-rust.git" }
-
-# TODO: set a real version and adaptivemsg dependency before publishing.
